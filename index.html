@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Retro Sound Board</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cutive&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <h1>Retro Sound Board</h1>
+    <div class="gameBtn">
+         <a href="./Game/game.html">think you can place the sounds? Play the game first!</a>
+    </div>
+    <div class="container" id="soundBoard">
+        <div class="btn" id="dialup">
+            <img src="./source/photos/dialup.jpeg">
+            <p>Dialup modem</p>
+        </div>
+        <div class="btn" id="vcr">
+            <img src="./source/photos/vcr.jpeg"/>
+            <p>VCR</p>
+        </div>
+        <div class="btn" id="camera">
+            <img src="./source/photos/camera.jpeg"/>
+            <p>Film SLR</p>
+        </div>
+        <div class="btn" id="rotary">
+            <img src="./source/photos/rotary.jpeg"/>
+            <p>Rotary Phone</p>
+        </div>
+        <div class="btn" id="typewriter">
+            <img src="./source/photos/typewriter.jpeg"/>
+            <p>Typewriter</p>
+        </div><div class="btn" id="polaroid">
+            <img src="./source/photos/polaroid.webp"/>
+            <p>polaroid</p>
+        </div>
+	</div>
+    <div class="footer">
+        <p>Made for fun by CreatorTray</p> 
+     </div>
+	
+    <audio id="dialUpSound">
+        <source src="./source/sounds/dialup.flac" type="audio/aac">
+    </audio>
+    
+    <audio id="vcrSound">
+        <source src="./source/sounds/vcr.wav" type="audio/wav">
+    </audio>
+    
+    <audio id="cameraSound">
+        <source src="./source/sounds/camera.wav" type="audio/wav">
+    </audio>
+    
+    <audio id="rotarySound">
+        <source src="./source/sounds/rotary.mp3" type="audio/mpeg">
+    </audio>
+    
+    <audio id="typewriterSound">
+        <source src="./source/sounds/typewriter.mp3" type="audio/mpeg">
+    </audio>
+    
+    <audio id="polaroidSound">
+        <source src="./source/sounds/polaroid.wav" type="audio/wav">
+    </audio>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>

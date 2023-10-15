@@ -1,0 +1,167 @@
+body{
+	background: blue;
+	font-family: 'Cutive', serif;
+	font-size: 24pt;
+	font-weight: 500;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: orange;
+}
+
+h1{
+	font-size: 2rem;
+	font-weight: 800;
+}
+
+div.gameBtn{
+	width: fit-content;
+	text-align: center;
+	padding: 10px; 
+	border: 10px solid orange;
+	border-radius: 5%;
+}
+
+div> a{
+	text-decoration: none;
+	text-decoration-line: none;
+	color: orange;
+	padding: 0px;
+	margin: 0px;
+	font-size: 24pt;
+}
+
+.container{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 6px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+div.btn{
+	width: 500px;
+	height: 500px;
+	border: 10px solid orange;
+	border-radius: 5%;
+	display: flex;
+	flex-direction:column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+.btn.answer{
+	width: 500px;
+	height: 50px;
+	display: flex;
+	flex-direction: row;
+}
+
+.right{
+	background-color: green;
+	border-color: yellow;
+	color: yellow;
+	box-shadow: 0 0 10px white;
+}
+
+.wrong{
+	background-color: red;
+	border-color: black;
+	color: black;
+}
+
+.answer> img{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	margin: 5px;
+}
+
+img{
+	width: 250px;
+	height: 250px;
+}
+
+img.btn{
+	width: 500px;
+	height: 500px;
+	border-radius: 50%;
+}
+
+.pressed{
+	transform: scale(0.9);
+	background-color: #002E3D;
+	border-color: burntOrange;
+}
+
+.pushed{
+	transform: scale(0.9);
+	opacity: 80%;
+	box-shadow: 0 0 10px midnightblue;
+}
+
+.footer{
+	width: 50%;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: space-evenly;
+	gap: 10px;
+	padding: 0px, 20px;
+}
+
+.footer> a{
+	text-decoration-line: underline;
+}
+
+@media (min-width: 720px) and (max-width: 1280px) {
+  .container {
+	width: 100%;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  div.gameBtn{
+	width: 100%;
+	text-align: center;
+  }
+
+  div.btn {
+    width: 400px;
+    height: 400px;
+  }
+
+div.answer{
+	width: 50%;
+}
+
+  img {
+    width: 200px;
+    height: 200px;
+  }
+  .footer{
+	flex-direction: column;
+  }
+}
+@media (max-width: 720px) {
+  body {
+    font-size: 16pt;
+    font-weight: 400;
+  }
+  .container{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+  div.btn, div.answer{
+    width: auto;
+	height: fit-content;
+	flex-direction: row;
+  }
+  img {
+    width: 40px;
+    height: 40px;
+  }
+  .footer{
+	flex-direction: column;
+  }
+}

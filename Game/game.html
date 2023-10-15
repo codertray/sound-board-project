@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>RetroS Sound Recognition Game</title>
+	    <link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Cutive&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="../styles.css">
+	</head>
+	
+	<body>
+		<h1>Retro Sound Recognition Game</h1>
+		<p id="info">press the play button, or the spacebar to begin!</p>
+		
+		<img class="btn" src="../source/photos/play.png"/>
+		
+		<div class="container" id="soundBoard">
+        <div class="btn answer" id="dialup">
+            <img src="../source/photos/dialup.jpeg">
+            <p>Dialup modem</p>
+        </div>
+        <div class="btn answer" id="vcr">
+            <img src="../source/photos/vcr.jpeg"/>
+            <p>VCR</p>
+        </div>
+        <div class="btn answer" id="camera">
+            <img src="../source/photos/camera.jpeg"/>
+            <p>Film SLR</p>
+        </div>
+        <div class="btn answer " id="rotary">
+            <img src="../source/photos/rotary.jpeg"/>
+            <p>Rotary Phone</p>
+        </div>
+        <div class="btn answer" id="typewriter">
+            <img src="../source/photos/typewriter.jpeg"/>
+            <p>Typewriter</p>
+        </div>
+		<div class="btn answer" id="polaroid">
+            <img src="../source/photos/polaroid.webp"/>
+            <p>polaroid</p>
+        </div>
+	</div>
+    <div class="footer">
+        <a href="../index.html">Home</a>
+        <p>Made for fun by CreatorTray</p>
+    </div>
+
+	
+    <audio id="dialUpSound">
+        <source src="../source/sounds/dialup.flac" type="audio/aac">
+    </audio>
+    
+    <audio id="vcrSound">
+        <source src="../source/sounds/vcr.wav" type="audio/wav">
+    </audio>
+    
+    <audio id="cameraSound">
+        <source src="../source/sounds/camera.wav" type="audio/wav">
+    </audio>
+    
+    <audio id="rotarySound">
+        <source src="../source/sounds/rotary.mp3" type="audio/mpeg">
+    </audio>
+    
+    <audio id="typewriterSound">
+        <source src="../source/sounds/typewriter.mp3" type="audio/mpeg">
+    </audio>
+    
+    <audio id="polaroidSound">
+        <source src="../source/sounds/polaroid.wav" type="audio/wav">
+    </audio>
+	
+	<audio id="rightSound">
+		<source src="../source/sounds/right.wav" type="audio/wav">
+	</audio>
+	
+	<audio id="wrongSound">
+		<source src="../source/sounds/wrong.wav" type="audio/wav">
+	</audio>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="./game.js"></script>
+</body>
+</html>
